@@ -11,9 +11,8 @@ pipeline {
     stage ('dockerization') {
       steps {
         sh '''
-        docker build -t your_tag .
-        docker push ...
-        '''
+        docker build -t testing/Dockerfile
+       
       }
     }
   }
